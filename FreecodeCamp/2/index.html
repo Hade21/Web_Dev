@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Submission</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <main id="main">
+        <div class="container">
+            <header class="header">
+                <h1 id="title">Freecodecamp Form Submission</h1>
+                <p id="description">Form ini ditujukan untuk testing</p>
+            </header>
+            <form action="" id="survey-form">
+                <div class="form-group jeneng">
+                    <div class="nama depan">
+                        <label for="name" id="name-label">Nama Depan</label>
+                        <input type="text" name="name" id="name" placeholder="Masukkan nama depan Anda" required/>
+                    </div>
+                    <div class="nama belakang">
+                        <label for="namabelakang">Nama Belakang</label>
+                        <input type="text" name="namabelakang" id="namabelakang" placeholder="Masukkan nama belakang Anda" required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Masukkan alamat email Anda" required/>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Umur</label>
+                    <input type="number" id="number" name="number" min="17" max="99" placeholder="Umur">
+                </div>
+                <div class="form-group">
+                    <p>Pilih jenis kelamin Anda</p>
+                    <label><input type="radio" name="kelamin" value="Laki-laki" class="input-radio" checked>Laki-laki</label>
+                    <label><input type="radio" name="kelamin" value="Perempuan" class="input-radio">Perempuan</label>
+                    <label><input type="radio" name="kelamin" value="Lainnya" class="input-radio">Lainnya</label>
+                </div>
+                <div class="form-group">
+                    <select name="dropdown" id="dropdown" required>
+                        <option value="" selected disabled>Pilih hobi Anda</option>
+                        <option value="baca">Membaca</option>
+                        <option value="tulis">Menulis cerita</option>
+                        <option value="game">Bermain game</option>
+                        <option value="prog">Programming</option>
+                        <option value="football">Sepak Bola</option>
+                        <option value="mancing">Memancing</option>
+                        <option value="badminton">Badminton</option>
+                        <option value="kasti">Bola Kasti</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Pendidikan terakhir</p>
+                    <label><input type="checkbox" name="pendidikan" value="SD">SD</label>
+                    <label><input type="checkbox" name="pendidikan" value="SMP">SMP</label>
+                    <label><input type="checkbox" name="pendidikan" value="SMA/K">SMA/SMK</label>
+                    <label><input type="checkbox" name="pendidikan" value="Diploma">Diploma</label>
+                    <label><input type="checkbox" name="pendidikan" value="S1">Sarjana</label>
+                    <label><input type="checkbox" name="pendidikan" value="Magister">Magister</label>
+                </div>
+                <div class="form-group">
+                    <p class="comment">Masukkan pendapat Anda mengenai Freecodecamp ini</p>
+                    <textarea name="comment" id="input-textarea" rows="5" class="comment" placeholder="Masukkan komentar Anda"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    width: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 90px;
+    left: 0;
+    background-color: #211d30;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-wrapper img {
+    height: 80px;
+}
+
+.linked {
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    color: rgb(231, 228, 228);
+}
+
+#menu {
+    display: none;
+}
+
+main {
+    margin-top: 90px;
+}
+
+#welcome-section {
+    padding: 0 40px;
+    background-color: #00FDF0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: stretch;
+}
+
+.side {
+    width: 50%;
+    line-height: 1;
+    align-self: center;
+}
+
+.left h3 {
+    font-size: 36px;
+    margin-bottom: 6px;
+    padding-bottom: 0;
+    color: rgb(66, 64, 64);
+    opacity: 0.8;
+    text-shadow: 2px 2px 3px rgb(10, 145, 179);
+}
+
+.namalengkap h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #112793;
+    text-shadow: 2px 2px 3px rgb(10, 145, 179);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left h2 {
+    margin-top: 24px;
+    margin-bottom: 4px;
+    padding: 0;
+    color: #0037db;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+.nama {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+}
+
+.nama h3 {
+    font-size: 36px;
+    height: 100%;
+    margin-right: 8px;
+}
+
+.namalengkap {
+    display: inline;
+}
+
+.left p {
+    margin: 0px 0;
+    font-size: 18px;
+}
+
+.right img {
+    max-width: 500px;
+    width: 100%;
+    align-self: center;
+}
+
+.img-wrapper {
+    align-self: center;
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+#projects {
+    padding: 120px 0;
+    text-align: center;
+    background-color: #FF611E;
+}
+
+#projects h1 {
+    font-size: 36px;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgb(128, 126, 126);
+}
+
+.project-wrapper {
+    padding-top: 36px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.project-tile {
+    width: 20%;
+    background-color: #ffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    transition: box-shadow, 1s;
+}
+
+.project-tile:hover {
+    position: relative;
+    top: -2px;
+    box-shadow: 0 3px 4px rgb(63, 63, 63);
+}
+
+.project-tile:active {
+    position: relative;
+    top: 2px;
+}
+
+.project-tile img {
+    max-width: 200px;
+    width: 100%;
+    padding: 12px 8px;
+}
+
+.project-tile a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(66, 64, 64);
+}
+
+#contact {
+    padding: 120px 0;
+    background-color: #0A1A7A;
+    color: rgb(231, 228, 228);
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 36px;
+    padding: 0;
+}
+
+#contact p {
+    margin: 12px auto;
+}
+
+#contact-group {
+    display: flex;
+    justify-content: center;
+    color: rgb(63, 63, 63);
+}
+
+#contact-group a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(63, 63, 63);
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 0 8px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    transition: text-shadow 1s;
+}
+
+#contact-group a:hover {
+    box-shadow: 4px 4px 5px rgba(35, 35, 36, 0.849);
+    text-shadow: 1px 1px 2px rgb(66, 64, 64);
+}
+
+#contact-group i {
+    margin-right: 5px;
+}
+
+@media(max-width:600px) {
+    #nav-link {
+        display: none;
+    }
+    #menu {
+        display: block;
+        color: white;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    #welcome-section {
+        display: block;
+        margin-top: 80px;
+    }
+    .side {
+        width: 100%;
+        padding-top: 8px;
+        margin-bottom: 16px;
+    }
+    .left h3 {
+        margin-top: 0;
+        font-size: 36px;
+    }
+    .namalengkap h1 {
+        font-size: 36px;
+    }
+    .left h2 {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .left p {
+        font-size: 14px;
+    }
+    .nama {
+        margin: 3px auto;
+        display: inline;
+    }
+    .project-tile {
+        width: 90%;
+    }
+    .project-wrapper {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0 5%;
+    }
+    #contact-group {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .contact-link {
+        display: block;
+        width: 80%;
+        padding: 10px auto;
+        margin: 5px 10%;
+    }
+}

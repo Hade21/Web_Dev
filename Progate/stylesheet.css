@@ -1,0 +1,234 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        font-family: "Lucida Grande";
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .clear {
+        clear: left;
+    }
+    
+    .wrapper {
+        max-width: 1170px;
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    
+    .container {
+        padding: 180px 0 100px 0;
+        background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+        background-size: cover;
+        color: white;
+        text-align: center;
+    }
+    
+    .container h1 {
+        opacity: 0.7;
+        font-size: 45px;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    
+    .container p {
+        opacity: 0.7;
+        margin-bottom: 3px;
+        margin-top: 0;
+    }
+    
+    .btn {
+        padding: 12px 24px 12px 24px;
+        display: inline-block;
+        color: white;
+        opacity: 0.8;
+        border-radius: 5px;
+    }
+    
+    .signup {
+        background-color: #239b76;
+        opacity: 0.7;
+    }
+    
+    .facebook {
+        background-color: #3b5998;
+        margin-right: 10px;
+    }
+    
+    .facebook::before {
+        content: "\f082";
+        font-weight: 900;
+        margin-right: 3px;
+        color: white;
+    }
+    
+    .twitter::before {
+        content: "\f081";
+        font-weight: 900;
+        margin-right: 3px;
+        color: white
+    }
+    
+    .twitter {
+        background-color: #55acee;
+    }
+    
+    .btn-wrapper {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .btn-wrapper p {
+        margin: 10px 0;
+    }
+    
+    .btn:hover {
+        opacity: 1;
+    }
+    
+    .fa {
+        margin-right: 5px;
+        font-size: 12px;
+    }
+    
+    header {
+        width: 100%;
+        height: 65px;
+        background-color: rgba(34, 49, 52, 0.9);
+        position: fixed;
+        z-index: 10;
+    }
+    
+    .menu-icon {
+        color: white;
+        float: right;
+        font-size: 25px;
+        padding: 20px 0;
+        display: none;
+    }
+    
+    .logo {
+        width: 124px;
+        margin-top: 20px;
+    }
+    
+    .header-left {
+        float: left;
+    }
+    
+    .header-right {
+        float: right;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    .header-right a {
+        line-height: 65px;
+        color: white;
+        padding: 0 25px;
+        display: block;
+    }
+    
+    .header-right:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .konten {
+        background-color: #f7f7f7;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+    
+    .heading {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        color: #5f5d60;
+    }
+    
+    .heading h2 {
+        font-weight: normal;
+    }
+    
+    .lessonss {
+        width: 100%;
+    }
+    
+    .lesson-item {
+        width: 25%;
+        float: left;
+    }
+    
+    .lesson-icon {
+        position: relative;
+    }
+    
+    .lesson-icon p {
+        position: absolute;
+        top: 75px;
+        width: 100%;
+        color: white;
+    }
+    
+    .txt-content {
+        width: 80%;
+        color: #b3aeb5;
+        font-size: 15px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    
+    .message {
+        text-align: center;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 80px;
+    }
+    
+    .mulai {
+        background-color: #5dca88;
+        padding: 15px 40px 15px 40px;
+        box-shadow: 0 7px #1a7940;
+        cursor: pointer;
+    }
+    
+    .heading-message h3 {
+        font-weight: normal;
+    }
+    
+    .heading-message {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        color: #5f5d60;
+    }
+    
+    .heading-message h2,
+    h3 {
+        margin: 0 auto;
+    }
+    
+    .mulai:active {
+        box-shadow: none;
+        position: relative;
+        top: 7px;
+    }
+    
+    .footer-logo {
+        width: 125px;
+    }
+    
+    .footer-text {
+        color: #b3aeb5;
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    footer {
+        padding-top: 30px;
+    }

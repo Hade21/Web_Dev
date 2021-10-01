@@ -1,0 +1,227 @@
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        /*Bagian Header*/
+        
+        .header-wrapper {
+            background-color: rgb(72, 136, 255);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            color: white;
+        }
+        
+        .container h2 {
+            font-size: 40px;
+            float: left;
+            padding: 20px 0;
+        }
+        
+        .formlogin form {
+            float: right;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .formlogin label,
+        input {
+            display: block;
+        }
+        
+        .formlogin input[type="checkbox"] {
+            display: inline-block;
+            margin-top: 3px;
+            margin-right: 3px;
+            float: left;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .formlogin input[type="submit"] {
+            color: white;
+            background-color: rgb(72, 136, 255);
+            padding: 3px 5px;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 12px;
+            border: 1px solid rgba(66, 66, 66, 0.5);
+            cursor: pointer;
+        }
+        
+        .formlogin label,
+        a {
+            font-size: 12px;
+            text-decoration: none;
+            margin-bottom: 3px;
+            margin-top: 3px;
+        }
+        
+        .formlogin a {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .group {
+            float: left;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        /*Konten*/
+        
+        .middle-content {
+            background-color: rgb(241, 244, 247);
+        }
+        
+        .content {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .side {
+            width: 50%;
+        }
+        
+        .left h3 {
+            font-size: 23px;
+            padding-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .info p {
+            font-size: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .info span {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .info p[id="photo"]::before {
+            content: "\f1ea";
+            font-size: 70px;
+            color: rgb(184, 184, 184);
+            margin-right: 20px;
+        }
+        
+        .info p[id="share"]::before {
+            content: "\f1e1";
+            font-size: 70px;
+            color: rgb(184, 184, 184);
+            margin-right: 20px;
+        }
+        
+        .info p[id="find"]::before {
+            content: "\f002";
+            font-size: 70px;
+            color: rgb(184, 184, 184);
+            margin-right: 20px;
+        }
+        
+        .form-pendaftaran h3 {
+            font-size: 30px;
+            padding-top: 50px;
+        }
+        
+        form {
+            margin-top: 20px;
+        }
+        
+        .form-pendaftaran input {
+            width: 100%;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+        
+        .name {
+            width: 100%;
+        }
+        
+        .name input {
+            display: block;
+            float: left;
+            width: 48%;
+        }
+        
+        .name input[id="Lname"] {
+            float: right;
+        }
+        
+        .form-pendaftaran h4 {
+            padding-top: 20px;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        
+        .birthday select {
+            height: 25px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .birthday a {
+            font-size: 13px;
+            text-decoration: none;
+        }
+        
+        .gender-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        
+        .gender-group input[type="radio"] {
+            width: 15px;
+            margin-bottom: 0px;
+            margin-right: 5px;
+        }
+        
+        .gender-group label {
+            margin-right: 20px;
+            font-size: 15px;
+        }
+        
+        .register_info {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .reglink {
+            font-weight: bold;
+        }
+        
+        .form-pendaftaran input[type="submit"] {
+            width: 100px;
+            color: white;
+            background-color: rgb(1, 190, 112);
+            border-radius: 5px;
+            box-shadow: 1px black;
+        }
+        
+        .signupfooter {
+            border-top: 1px solid rgb(82, 82, 82);
+            padding-top: 5px;
+            font-size: 15px;
+        }
+        
+        .signupfooter a {
+            font-weight: bold;
+        }
+        
+        .form-pendaftaran a {
+            color: rgb(14, 84, 214)
+        }

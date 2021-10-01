@@ -1,0 +1,41 @@
+@media (max-width:1000px) {
+    .lesson-item {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .container h1 {
+        font-size: 32px;
+    }
+    .heading-message h2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:670px) {
+    .lesson-item {
+        width: 100%;
+    }
+    footer {
+        text-align: center;
+    }
+    .btn {
+        width: 100%;
+    }
+    .facebook {
+        margin-bottom: 10px;
+    }
+    .container h1 {
+        font-size: 24px;
+        line-height: 36px
+    }
+    .container p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .header-right {
+        display: none;
+    }
+    .menu-icon {
+        display: inline-block;
+    }
+}
