@@ -14,7 +14,11 @@ function App() {
   );
   function storeData(inputBook) {
     console.log(inputBook);
-    alert("Data berhasil Ditambahkan")
+    alert("Data berhasil Ditambahkan!")
+  }
+  function updateData(inputBook) {
+    console.log(inputBook);
+    alert("Data berhasil Diperbarui!")
   }
 
   return (
@@ -27,7 +31,7 @@ function App() {
           </Route>
 
           <Route path="/manajemenbuku" exact>
-            <ManajemenBuku bookList={books} store={storeData}/>
+            <ManajemenBuku bookList={books} store={storeData} update={updateData}/>
           </Route>
         </Switch>
       </BrowserRouter>
