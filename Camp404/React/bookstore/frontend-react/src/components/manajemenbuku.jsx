@@ -1,7 +1,7 @@
 import React from "react";
 import {useState} from "react";
 
-function Manajemenbuku({bookList, store, update}) {
+function Manajemenbuku({bookList, store, update, remove}) {
     const[form, setForm] = useState();
     const[inputBook, setInputBook] = useState();
     function showCreate() {
@@ -31,6 +31,9 @@ function Manajemenbuku({bookList, store, update}) {
         event.preventDefault();
         update(inputBook);
         setForm("")
+    }
+    function deleteBook(book) {
+        remove(book);
     }
     console.log(bookList);
     return (
@@ -110,7 +113,7 @@ function Manajemenbuku({bookList, store, update}) {
                                 <td> {book.stock} </td>
                                 <td>
                                     <button className="btn btn-info mr-3" onClick={() => showEdit(book)}>Edit</button>
-                                    <button className="btn btn-danger">Hapus</button>
+                                    <button className="btn btn-danger" onClick={() => deleteBook(book)}>Hapus</button>
                                 </td>
                             </tr>
                         ))}

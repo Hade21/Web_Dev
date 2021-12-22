@@ -20,6 +20,10 @@ function App() {
     console.log(inputBook);
     alert("Data berhasil Diperbarui!")
   }
+  function deleteData(book) {
+    console.log(book);
+    alert("Data berhsil dihapus!")
+  }
 
   return (
     <div className="App">
@@ -31,7 +35,7 @@ function App() {
           </Route>
 
           <Route path="/manajemenbuku" exact>
-            <ManajemenBuku bookList={books} store={storeData} update={updateData}/>
+            <ManajemenBuku bookList={books} store={storeData} update={updateData} remove={deleteData}/>
           </Route>
         </Switch>
       </BrowserRouter>
