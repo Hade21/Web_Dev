@@ -31,7 +31,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact>
-            <Beranda />
+            <Beranda bookList={books}/>
           </Route>
 
           <Route path="/manajemenbuku" exact>
