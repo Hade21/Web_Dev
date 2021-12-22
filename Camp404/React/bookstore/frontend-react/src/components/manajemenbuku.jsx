@@ -23,6 +23,7 @@ function Manajemenbuku({bookList, store}) {
     return (
         <div className="container-mt3">
             <h1 className="">Manajemen Buku</h1>
+            
             <div id="formTambah">
                 <h5>Tambah Buku</h5>
                 <hr />
