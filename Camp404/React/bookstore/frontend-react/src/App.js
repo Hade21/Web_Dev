@@ -12,6 +12,10 @@ function App() {
       {_id : 2, judul : "Bumi", pengarang : "Tere Liye", harga : 85000, stock : 5}
     ]
   );
+  function storeData(inputBook) {
+    console.log(inputBook);
+    alert("Data berhasil Ditambahkan")
+  }
 
   return (
     <div className="App">
@@ -23,7 +27,7 @@ function App() {
           </Route>
 
           <Route path="/manajemenbuku" exact>
-            <ManajemenBuku bookList={books} />
+            <ManajemenBuku bookList={books} store={storeData}/>
           </Route>
         </Switch>
       </BrowserRouter>

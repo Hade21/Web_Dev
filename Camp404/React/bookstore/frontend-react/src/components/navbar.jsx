@@ -2,7 +2,7 @@ import React from "react";
 import logo from '../assets/camp404v2.png'
 import {Link} from "react-router-dom";
 
-function navbar() {
+function Navbar() {
     return (
         <div>
             <nav className="navbar navbar-expand bg-dark">
@@ -22,4 +22,4 @@ function navbar() {
     );
 }
 
-export default navbar;
+export default Navbar;
