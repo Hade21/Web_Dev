@@ -3,15 +3,29 @@ import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Beranda from './components/beranda';
 import Navbar from './components/navbar';
 import ManajemenBuku from'./components/manajemenbuku';
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import axios from "axios";
 
 function App() {
-  const[books, setbooks] = useState(
-    [
-      {_id : 1, judul : "Laskar Pelangi", pengarang : "Andrea Hirata", harga : 80000, stock : 7},
-      {_id : 2, judul : "Bumi", pengarang : "Tere Liye", harga : 85000, stock : 5}
-    ]
-  );
+  const[books, setBooks] = useState([
+    
+  ]);
+
+  useEffect(() => {
+    retrieveData();
+  }, []);
+  
+  function retrieveData() {
+    axios
+      .get("http://localhost:4000/book")
+      .then((response) => {
+        setBooks(response.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+
   function storeData(inputBook) {
     console.log(inputBook);
     alert("Data berhasil Ditambahkan!")
