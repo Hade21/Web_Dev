@@ -33,7 +33,7 @@ function App() {
       .post("http://localhost:4000/book/add", inputBook)        //Request post ke db
       .then((res) => {
         setBooks((prevBooks) => [...prevBooks, inputBook]);     //Update data ke frontend
-        alert("Data berhasil ditambahkan..!")
+        alert("Data berhasil ditambahkan..!");
       })
       .catch((error) => {
         console.log(error.response.data);
@@ -46,15 +46,24 @@ function App() {
       .put("http://localhost:4000/book/update/" + inputBook._id, inputBook)    //Request put untuk update data
       .then((res) => {
         retrieveData();                                                       //Memanggil fungsi retrieveData untuk reload data
-        alert("Data berhasil diupdate..!")
+        alert("Data berhasil diupdate..!");
       })
       .catch((error) => {
         console.log(error.response.data);
       });
   }
   function deleteData(book) {
-    console.log(book);
-    alert("Data berhsil dihapus!")
+    // console.log(book);
+    // alert("Data berhsil dihapus!")
+    axios
+      .delete("http://localhost:4000/book/delete/" + book._id)  //Request delete ke db
+      .then((res) => {
+        retrieveData();                                         //Reload data
+        alert("Data berhasil dihapus..!");
+      })
+      .catch((error) => {
+        console.log(error.response.data);
+      });
   }
 
   return (
