@@ -27,12 +27,22 @@ function App() {
   }
 
   function storeData(inputBook) {
-    console.log(inputBook);
-    alert("Data berhasil Ditambahkan!")
+    // console.log(inputBook);
+    // alert("Data berhasil Ditambahkan!")
+    axios
+      .post("http://localhost:4000/book/add", inputBook)        //Request post ke db
+      .then((res) => {
+        setBooks((prevBooks) => [...prevBooks, inputBook]);     //Update data ke frontend
+        alert("Data berhasil ditambahkan..!")
+      })
+      .catch((error) => {
+        console.log(error.response.data);
+      });
   }
   function updateData(inputBook) {
     console.log(inputBook);
     alert("Data berhasil Diperbarui!")
+    
   }
   function deleteData(book) {
     console.log(book);
