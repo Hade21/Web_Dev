@@ -40,9 +40,17 @@ function App() {
       });
   }
   function updateData(inputBook) {
-    console.log(inputBook);
-    alert("Data berhasil Diperbarui!")
-    
+    // console.log(inputBook);
+    // alert("Data berhasil Diperbarui!")
+    axios
+      .put("http://localhost:4000/book/update/" + inputBook._id, inputBook)    //Request put untuk update data
+      .then((res) => {
+        retrieveData();                                                       //Memanggil fungsi retrieveData untuk reload data
+        alert("Data berhasil diupdate..!")
+      })
+      .catch((error) => {
+        console.log(error.response.data);
+      });
   }
   function deleteData(book) {
     console.log(book);
