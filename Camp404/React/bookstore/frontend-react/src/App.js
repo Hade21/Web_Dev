@@ -7,9 +7,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 
 function App() {
-  const[books, setBooks] = useState([
-    
-  ]);
+  const[books, setBooks] = useState([]);
 
   useEffect(() => {
     retrieveData();
