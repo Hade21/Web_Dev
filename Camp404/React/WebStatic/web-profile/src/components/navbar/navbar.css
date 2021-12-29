@@ -32,8 +32,14 @@
     font-size: 16px;
     padding: 15px 0;
 }
-.btn-contact{
+ul li{
+    list-style: none;
+    display: table;
+    float: left;
     margin-left: 40px;
+}
+ul li a{
+    transition: all 0.5s ease 0s;
 }
 .bton-contact{
     background-color: #3868FD;
@@ -47,5 +53,24 @@
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
-    margin-left: 40px;
+}
+
+@media(max-width: 987px){
+    .project, .about{
+        font-size: 14px;
+    }
+    .bton-contact{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .container{
+        height: 60px;
+    }
+    .left-side p{
+        font-size: 24px;
+        align-self: center;
+    }
+    ul{
+        display: none;
+    }
 }

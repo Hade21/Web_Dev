@@ -22,19 +22,19 @@ const contact = () => {
                     </div>
                     <div className="btn tw">
                         <img src={TWLogo} alt="" />
-                        <a href="">Twitter</a>
+                        <a href="https://twitter.com/rachman_nicola">Twitter</a>
                     </div>
                     <div className="btn fb">
                         <img src={FBLogo} alt="" />
-                        <a href="">Facebook</a>
+                        <a href="https://www.facebook.com/muhammad.abdurrohman.1042">Facebook</a>
                     </div>
                     <div className="btn lkd">
                         <img src={LinkedLogo} alt="" />
-                        <a href="">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/muhammad-a-589675141/">LinkedIn</a>
                     </div>
                     <div className="btn git">
                         <img src={GithubLogo} alt="" />
-                        <a href="">Github</a>
+                        <a href="https://github.com/Hade21">Github</a>
                     </div>
                 </div>
             </div>

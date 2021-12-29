@@ -1,5 +1,5 @@
 .card{
-    width: 13%;
+    width: 17%;
     max-width: 150px;
     margin: 15px;
     padding: 30px 38px;
@@ -21,4 +21,26 @@
     font-size: 14px;;
     line-height: 16px;
     text-align: left;
+}
+
+@media(max-width:768px){
+    .title{
+        font-size: 16px;
+        line-height: normal;
+    }
+    .desc{
+        font-size: 12px;
+        line-height: normal;
+    }
+    .card{
+        width: 25%;
+    }
+}
+
+@media (max-width: 500px) {
+    .card{
+        width: 70%;
+        display: block;
+        max-width: none;
+    }
 }
