@@ -58,3 +58,6 @@ body{
     top: 2px;
     text-shadow: 1px 1px rgb(94, 94, 94);
 }
+.card-wrapper a{
+    text-decoration: none;
+}

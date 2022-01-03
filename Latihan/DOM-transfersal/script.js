@@ -8,5 +8,6 @@ const del = document.querySelectorAll(".hapus")
 del.forEach(function(event) {
     event.addEventListener("click", function(el) {
         el.target.parentElement.style.display = "none";
+        el.preventDefault();
     });
 });
