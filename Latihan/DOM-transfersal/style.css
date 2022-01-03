@@ -1,0 +1,60 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(151, 151, 151);
+}
+.profil{
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.container{
+    width: 100%;
+    display: inline-block;
+}
+.card-wrapper{
+    margin: 20px;
+    height: 96px;
+    background-color: #FFFFFF;
+    width: 495px;
+    border-radius: 48px;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-wrapper{
+    margin: auto 15px;
+    height: 100%;
+}
+.nama{
+    font-size: 24px;
+    display: block;
+    margin: 20px 0 0 0;
+}
+.telp{
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.hapus{
+    font-size: 24px ;
+    margin-left: 15px;
+    margin-right: 30px;
+    color: rgb(173, 173, 173);
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(151, 151, 151);
+    cursor: pointer;
+    position: relative;
+    top: 0;
+}
+.hapus:hover{
+    text-shadow: 2px 2px rgb(94, 94, 94);
+    color: red;
+}
+.hapus:active{
+    top: 2px;
+    text-shadow: 1px 1px rgb(94, 94, 94);
+}
